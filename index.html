@@ -8,37 +8,72 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="left-div">
-
-        <p class="credits">Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
+    <div class="main">
+        <div class="left-div">
+            <div>
+                <img src="./images/odin-lined.png" alt="The Odin Project Logo">
+                <h1>Sign-up Form</h1>
+            </div>
+            <p>Photo by Halie West on Unsplash</p>
+        </div>
+        <div class="form-setion">
+            <div class="header">
+                <div>
+                    <p> 
+                        This is not a real online service! You know you need something
+                        like this in your life to help you realize your deepest dreams.
+                        Sign up <em>now</em> to get started.
+                    </p>
+                    <p> You <em>know</em> you want to.</p>
+                </div>
+            </div>
+            <div>
+                <div class="input-section">
+                    <p>Let's do this!</p>
+                    <form id="my-form">
+                        <label for="firstname">
+                            First Name
+                            <input id="firstname" type="text" name="firstname" required="">
+                            <div id="first-name-error" class="error"></div>
+                        </label>
+                        <label for="lastname">
+                            First Name
+                            <input id="lastname" type="text" name="lastname" required="">
+                            <div id="last-name-error" class="error"></div>
+                        </label>
+                        <label for="email">
+                            Email
+                            <input id="email" type="email" name="email" required="" autocomplete="off">
+                            <div id="email-error" class="error"></div>
+                        </label>
+                        <label for="phonenumber">
+                            Phone Number
+                            <input id="phonenumber" type="tel" name="phonenumber" required="" pattern="[0-9]{10}">
+                            <div id="tel-error" class="error"></div>
+                        </label>
+                        <label for="password">
+                            Password
+                            <input id="password" type="password" name="password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <div id="password-error" class="error"></div>
+                        </label>
+                        <label for="passwordC">
+                            Confirm Password
+                            <input id="passwordC" type="password" name="passwordC" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <div id="passwordC-error" class="error"></div>
+                        </label>    
+                    </form>
+                </div>
+            </div>
+            <div class="submit-section">
+                <div>
+                    <button type="submit" form="my-form">Create Account</button>
+                    <p>
+                        Already have an account? 
+                        <a href="">Log in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="right-div">
-        <p class="bold-text">
-            This is not a real online service! You know you need something <br> 
-            like this in your life to help you realize your deepest dreams. <br>
-            Sign up <em>now</em> to get started.
-            <br>
-            <br>
-            You <em>know</em> you want to.
-        </p>
-        <form>
-            <legend>Let's do this!</legend>
-            FIRST NAME<br> <input type="text" name="first-name">
-            <br>
-            LAST NAME<br> <input type="text" name="last-name">
-            <br>
-            EMAIL<br> <input type="email" name="email">
-            <br>
-            PHONE NUMBER<br> <input type="tel" name="phone-number" 
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
-            <br>
-            PASSWORD<br> <input type="password" id="password" required>
-            <br>
-            CONFIRM PASSWORD<br> <input type="password" id="confirm-password">
-            <br>    
-        </form>
-        <button type="submit" class="pure-button pure-button-primary">Create Account</button>
-        <p class="login">Already have an account? <a id="login" href="">Log in</a></p>
-    </div>    
 </body>
 </html>
