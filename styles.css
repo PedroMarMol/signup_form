@@ -38,6 +38,11 @@ p {
     background-color: white;
  }
 
+legend {
+    padding: 20px 0px;
+    font-size: 19px;
+}
+
  input {
     margin: 2px;
     border: 1px solid #E5E7EB;
