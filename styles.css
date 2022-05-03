@@ -112,6 +112,10 @@ a {
   margin-top: 2rem;
 }
 
+.submit-section > div > p {
+  font-size: 13px;
+}
+
 button[type='submit'] {
   padding: .8rem 1.3rem;
   font-size: 1.3rem;
