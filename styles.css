@@ -66,8 +66,20 @@ legend {
      font-size: 16px;
  }
 
- a {
+ #login {
     color: #596D48;
     font-weight: bold;
     text-decoration: none;
  }
+
+.credits {
+    color: white;
+    position: relative;
+    left: -33.5%;
+    size: 28.5% 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
